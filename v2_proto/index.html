@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique | Techno Chantier</title>
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header class="headerbar">
+        <div class="header-inner">
+            <div class="logo">
+                <img class="logoimg" src="./assets/img/logo.png" alt="logo">
+                <span class="logotext separate">TechnoChantier</span>
+            </div>
+            <div class="menu">
+                <ul class="menu">
+                    <li id="about">A propos de nous</li>
+                    <li id="products">Nos produits</li>
+                    <li id="contact">Nous contacter</li>
+                </ul>
+            </div>
+            <div class="navbar-container">
+                <div class="navbar">
+                    <form class="nav">
+                        <input type="search" placeholder="Rechercher des produits sur le site" class="navbar input">
+                        <button type="submit" class="navbar submit"><span class="material-symbols-outlined search">search</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="header links">
+                <div class="cart wrapper">
+                    <a href="./index.html" class="cart-link">
+                        <div class="cart svg container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" viewBox="0 0 22.5 2 0">
+                                <path id="icon_cart" data-name="Icon awesome-shopping-cart" d="M20.63,11.77l1.847-8.125A.938.938,0,0,0,21.562,2.5H6.219L5.861.75A.937.937,0,0,0,4.943,0H.938A.937.937,0,0,0,0,.938v.625A.937.937,0,0,0,.938,2.5h2.73L6.411,15.915a2.188,2.188,0,1,0,2.619.335H17.22a2.187,2.187,0,1,0,2.484-.406l.216-.948a.938.938,0,0,0-.914-1.145H8.52L8.265,12.5H19.716A.937.937,0,0,0,20.63,11.77Z" fill="#ffc516"></path> == $0
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="account wrapper">
+                    <a href="./account/loginpage.html" class="account-link">Se connecter</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-separator"></div>
+        <div class="menu about" id="menuAbout">
+
+        </div>
+        <div class="menu products" id="menuProducts">
+        
+        </div>
+        <div class="menu contact" id="menuContact">
+
+        </div>
+    </header>
+    <script>
+        const about = document.getElementById('about');
+        const products = document.getElementById('products');
+        const contact = document.getElementById('contact');
+
+        const menuAbout = document.getElementById('menuAbout');
+        const menuProducts = document.getElementById('menuProducts');
+        const menuContact = document.getElementById('menuContact');
+
+        about.addEventListener('click', () => {
+            menuAbout.classList.toggle('open');
+            if (menuProducts.classList.contains('open')) {
+                menuProducts.classList.toggle('open');
+                products.classList.toggle('open');
+            }
+            if (menuContact.classList.contains('open')) {
+                menuContact.classList.toggle('open');
+                contact.classList.toggle('open');
+            }
+            about.classList.toggle('open');
+        });
+
+        products.addEventListener('click', () => {
+            menuProducts.classList.toggle('open');
+            products.classList.toggle('open');
+            if (menuAbout.classList.contains('open')) {
+                menuAbout.classList.toggle('open');
+                about.classList.toggle('open');
+            }
+            if (menuContact.classList.contains('open')) {
+                menuContact.classList.toggle('open');
+                contact.classList.toggle('open');
+            }
+        });
+
+        contact.addEventListener('click', () => {
+            menuContact.classList.toggle('open');
+            contact.classList.toggle('open');
+            if (menuAbout.classList.contains('open')) {
+                menuAbout.classList.toggle('open');
+                about.classList.toggle('open');
+            }
+            if (menuProducts.classList.contains('open')) {
+                menuProducts.classList.toggle('open');
+                products.classList.toggle('open');
+            }
+        });
+    </script>
+</body>
+</html>
