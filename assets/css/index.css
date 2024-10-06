@@ -23,8 +23,32 @@
 .logo {
     display: flex;
     width: 27%;
+    height: 100%;
     left: 0;
-    border: 5 solid black;
+    align-items: center;
+}
+
+.logoimg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.logotext {
+    display: none;
+    margin-left: -10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFC516;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 1300px) {
+    .logotext.separate {
+        display: inline;
+    }
 }
 
 .navbar {
@@ -37,11 +61,6 @@
     padding: 0px;
     background: #f6f6f6;
     border-radius: 5px;
-}
-
-.logoimg {
-    width: 55%;
-    margin-left: 50px
 }
 
 .navbar form {
@@ -134,6 +153,15 @@
 .cart.text strong {
     color: #FFC516;
     font-weight: 750;
+}
+
+@media (max-width: 860px) {
+    .cart.text {
+        display: none;
+    }
+    .login.text {
+        display: none;
+    }
 }
 
 .header-menu {
