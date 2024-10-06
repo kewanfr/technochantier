@@ -9,20 +9,38 @@
 </head>
 <body>
     <header class="headerbar">
-        <div class="logo">
-            <img class="logoimg" src="./assets/img/logo.png" alt="logo">
+        <div class="header-content">
+            <div class="logo">
+                <img class="logoimg" src="./assets/img/logo.png" alt="logo">
+            </div>
+            <div class="navbar">
+                <form class="nav">
+                    <input type="search" placeholder="Rechercher des produits sur le site" class="navbar input">
+                    <button type="submit" class="navbar submit"><span class="material-symbols-outlined search">search</span></button>
+                </form>
+            </div>
+            <div class="header links">
+                <a href="./account/loginpage.html" class="login-link">
+                    <i class="material-symbols-outlined" style="font-size: 60px;">account_circle</i>
+                    <span class="login text">
+                        Mon compte : <br>
+                        <strong>
+                            Se connecter
+                        </strong>
+                    </span>
+                </a>
+                <a href="./index.html" class="cart-link">
+                    <i class="material-symbols-outlined" style="font-size: 60px;">shopping_cart</i>
+                    <span class="cart text">
+                        Mon panier : <br>
+                        <strong>
+                            0 article
+                        </strong>
+                </a>
+            </div>
         </div>
-        <div class="navbar">
-            <form class="nav">
-                <input type="search" placeholder="Rechercher sur le site" class="navbar input">
-                <span class="material-symbols-outlined">search</span>
-            </form>
-        </div>
-        <div class="buttons">
-
-        </div>
-        <div class="menu">
-
+        <div class="header-menu">
+            <button class="menu-button"><span class="material-symbols-outlined">menu</span>MENU</button>
         </div>
     </header>
 </body>
