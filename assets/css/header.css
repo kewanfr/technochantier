@@ -38,16 +38,22 @@
 
 .logotext {
     display: none;
-    margin-left: -10px;
     font-size: 30px;
     font-weight: 700;
     color: #FFC516;
     font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
 }
 
 @media (min-width: 1300px) {
     .logotext.separate {
         display: inline;
+    }
+}
+
+@media (min-width: 1700px) {
+    .logotext.separate {
+        white-space: nowrap;
     }
 }
 
