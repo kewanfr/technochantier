@@ -1,4 +1,4 @@
-# Boutique TechnoChantier
+# equipe-32-03_BERNIER-Kewan_LANDREAU-Louison_PRONO--GOUBERT-Kilyan
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.univ-nantes.fr/E242176K/boutique-technochantier.git
+git remote add origin https://gitlab.univ-nantes.fr/pub/but/but1/r1.02/r1.02.dm/tp3-2/equipe-32-03_bernier-kewan_landreau-louison_prono-goubert-kilyan.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.univ-nantes.fr/E242176K/boutique-technochantier/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.univ-nantes.fr/pub/but/but1/r1.02/r1.02.dm/tp3-2/equipe-32-03_bernier-kewan_landreau-louison_prono-goubert-kilyan/-/settings/integrations)
 
 ## Collaborate with your team
 
