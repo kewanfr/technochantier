@@ -6,6 +6,8 @@
     <title>Boutique | Techno Chantier</title>
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./assets/css/products.css">
+
 </head>
 <body>
     <header class="headerbar">
@@ -21,7 +23,7 @@
                 </form>
             </div>
             <div class="header links">
-                <a href="./account/loginpage.html" class="login-link">
+                <a href="./account/login.html" class="login-link">
                     <i class="material-symbols-outlined loginicon" style="font-size: 50px;">account_circle</i>
                     <span class="login text">
                         Mon compte : <br>
@@ -41,31 +43,111 @@
             </div>
         </div>
         <div class="header-menu">
-            <div class="menu container">
-                <a href="./about/index.html" class="menu about">A propos de nous</a>
+            <div class="menu menu-container">
+                <a href="#about" class="menu about">A propos de nous</a>
             </div>
-            <div class="menu container">
-                <a href="./products/index.html" class="menu products">Nos produits</a>
+            <div class="menu menu-container">
+                <a href="#products" class="menu products">Nos produits</a>
             </div>
-            <div class="menu container">
-                <a href="./contact/index.html" class="menu contact">Nous contacter</a>
+            <div class="menu menu-container">
+                <a href="#footer" class="menu contact">Nous contacter</a>
             </div>
             <div class="bottom-separator"></div>
         </div>
-        <div class="side-menu" id="sideMenu">
-            <div class="sidemenu container icon" id='menuIcon'>
-                <i class="material-symbols-outlined menuicon" style="font-size: 40px">menu</i>
-            </div>
-        </div>
     </header>
     <!-- Le reste de la page -->
-     <script>
-        const menuIcon = document.getElementById('menuIcon');
-        const sideMenu = document.getElementById('sideMenu');
 
-        menuIcon.addEventListener('click', () => {
-            sideMenu.classList.toggle('open');
-        });
-     </script>
+
+    <div class="container">
+
+        <!-- Page #About -->
+         <section id="about">
+            <div class="section-header">
+                <h1>A propos de nous</h1>
+                <p>Techno Chantier est une entreprise familiale depuis 1758 et spécialisée dans la vente d'engins de chantier autonomes.</p>
+                <p>Nous proposons une large gamme de produits pour les professionnels du BTP.</p>
+                <!-- <iframe width="1920" height="1201" src="https://www.youtube.com/embed/9GbzNlBNs94" title="Techno Chantier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <br>
+                <iframe height="300px" width="475" src="https://www.youtube.com/embed/9GbzNlBNs94" title="Techno Chantier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+            </div>
+         </section>
+
+        <!-- Page #produits -->
+        <section id="products">
+            <div class="section-header">
+
+                <h1>Nos Produits</h1>
+                <p>Découvrez tous nos produits: pelleteuse, camion, grue, rouleau compresseur, etc.</p>
+            </div>
+        
+            <!-- Products list -->
+            <div id="products-list">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./assets/img/products/pelleteuse_chantier.webp" class="card-img" alt="Pelleteuse">
+                    </div>
+                    <div class="content">
+                        
+                        <h3>Pelleteuse</h3>
+                        <p>Notre pelleteuse haut de gamme vous permettra de creuser des supers trous, tranchées et pleins d'autres choses !</p>
+                        <div class="card-footer">
+                            
+                        <p class="price">Prix : 191 999 €</p>
+                        <button  class="buy btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./assets/img/products/camion_et_pelleteuse_electrique.webp" class="card-img" alt="Camion">
+                    </div>
+                    <div class="content">
+
+                        <h3>Camion</h3>
+                        <p>Le camion est un véhicule de transport de marchandises.</p> <br>
+                        <!-- Prix -->
+                        <div class="card-footer">
+                            
+                        <p class="price">Prix : 209 494 €</p>
+                        <button  class="buy btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./assets/img/products/grue_chenilles.webp" class="card-img" alt="Grue">
+                    </div>
+                    <div class="content">
+                        
+                        <h3>Grue</h3>
+                        <p>La grue est un engin de chantier utilisé pour soulever des charges lourdes.</p>
+
+                        <div class="card-footer">
+                            
+                        <p class="price">Prix : 328 294,9 €</p>
+                        <button  class="buy btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+    
+                        <img src="./assets/img/products/rouleau_compresseur.webp" class="card-img" alt="Rouleau compresseur">
+                    </div>
+                    <div class="content">
+                        
+                        <h3>Rouleau compresseur</h3>
+                        <p>Le rouleau compresseur est un engin de chantier utilisé pour compacter le sol.</p>
+                        <div class="card-footer">
+                            <p class="price">Prix : 54 992 €</p>
+                            <button  class="buy btn">Acheter</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
 </body>
 </html>
