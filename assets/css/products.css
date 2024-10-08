@@ -53,6 +53,10 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    margin-top: 20px;
+    scroll-margin-top: 180px;
+    margin-bottom: 5vh;
 }
 
 .section-header {
@@ -124,7 +128,7 @@ p {
 
 .card .card-header {
     /* margin: auto; */
-    margin-top: 20px;
+    margin-right: 20px;
     margin-left: 20px;
     height: 15vh;
     /* border-bottom: 1px solid black; */
@@ -133,11 +137,14 @@ p {
 .card > .content {
     padding: 15px;
     text-align: center;
+    position:relative;
+    bottom: 0;
 }
 
 .card > .content > h3 {
     text-wrap: nowrap;
     margin-bottom: 8px;
+    /* font-size: 1.1rem; */
 }
 
 .buy.btn {
@@ -158,6 +165,4 @@ p {
 
 .card > .content > .card-footer {
     margin-top: 30px;
-    position:static;
-    bottom: 0;
 }
