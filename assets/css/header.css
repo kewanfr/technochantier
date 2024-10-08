@@ -50,6 +50,9 @@
 
 .navbar {
     display: flex;
+    margin: 20px;
+    margin-right: 0;
+    margin-left: auto;
     justify-content: center;
     width: 40%;
     height: 38px;
@@ -57,7 +60,6 @@
     padding: 0px;
     background: #f6f6f6;
     border-radius: 5px;
-    margin: 20px;
 }
 
 .navbar form {
@@ -160,8 +162,17 @@
     .login.text {
         display: none;
     }
-    .logotext.separate {
+    .header.links {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .logotext {
         display: none;
+    }
+    .header.links {
+        margin-left: auto;
     }
 }
 
