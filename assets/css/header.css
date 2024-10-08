@@ -10,6 +10,8 @@
     height: 160px;
     align-items: center;
     flex-direction: column;
+    position: fixed;
+    /* margin-bottom: 30vh; */
 }
 
 .header-content {
@@ -196,9 +198,12 @@
     color: white;
     position: fixed;
     top: 125px;
+    flex-direction: row;
+    /* margin-left: 50px; */
+    text-wrap: nowrap;
 }
 
-.menu.container {
+.menu.menu-container {
     display: flex;
     height: 75%;
     width: fit-content;
@@ -208,18 +213,18 @@
     justify-content: center;
 }
 
-.menu.container.icon {
+.menu.menu-container.icon {
     width:40px;
     height: 100%;
     margin: 0;
     border-radius: none;
 }
 
-.menu.container.icon.clicked {
+.menu.menu-container.icon.clicked {
     background-color: #FFC516;
 }
 
-.menu.container:hover {
+.menu.menu-container:hover {
     background-color: #4d4d4d;
     border-radius: 5px;
     cursor: pointer;

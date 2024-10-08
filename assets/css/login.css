@@ -1,3 +1,6 @@
+@import url("./reset.css");
+@import url("./header.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +14,7 @@ body {
     background-color: rgb(247, 247, 247);
 }
 
-.container {
+.login-container {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -23,23 +26,26 @@ body {
     background-color: white;
     border-radius: 10px;
     min-width: 300px;
+
+    position: fixed;
+    top: 190px;
 }
 
-.logo {
+.login-logo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.logo img {
+.login-logo img {
     width: 25%;
     height: auto;
     min-width: 200px;
     min-height: auto;
 }
 
-.logo span {
+.login-logo span {
     width: 25%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -62,7 +68,7 @@ body {
     height: fit-content;
 }
 
-.form.email {
+.login-form > .form-control.email {
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -70,7 +76,7 @@ body {
     font-weight: 600;
 }
 
-.form.password {
+.login-form > .form-control.password {
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -90,45 +96,45 @@ body {
     border: 1px, solid, rgb(161, 161, 161);
 }
 
-.form.email input:hover {
+.login-form > .form-control.email input:hover {
     box-shadow: 0 0 0 2px #ffae00;
     border: 1px solid white;
 }
 
-.form.email input:focus {
+.login-form > .form-control.email input:focus {
     outline: none;
     box-shadow: 0 0 0 2px #FFC516;
     border: 1px solid white;
 }
 
-.form.password input:hover {
+.login-form > .form-control.password input:hover {
     box-shadow: 0 0 0 2px #ffae00;
     border: 1px solid white;
 }
 
-.form.password input:focus {
+.login-form > .form-control.password input:focus {
     outline: none;
     box-shadow: 0 0 0 2px #FFC516;
     border: 1px solid white;
 }
 
-.form.forgotpassword {
+.login-form > .form-control.forgotpassword {
     margin-top: -5px;
     margin-left: 13px;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: left;
 }
 
-.form.forgotpassword a {
+.login-form > .form-control.forgotpassword a {
     text-decoration: none;
     color: #ffae00;
 }
 
-.form.forgotpassword a:hover {
+.login-form > .form-control.forgotpassword a:hover {
     color: #FFC516;
 }
 
-.form.rememberme {
+.login-form > .form-control.rememberme {
     margin-top: 5px;
     display: flex;
     margin-left: 13px;
@@ -136,22 +142,22 @@ body {
     margin-bottom: 10px;
 }
 
-.form.rememberme label {
+.login-form > .form-control.rememberme label {
     margin-left: 7px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.form.rememberme input:checked {
+.login-form > .form-control.rememberme input:checked {
     background-color: #FFC516;
 }
 
-.form.submit {
+.login-form > .form-control.submit {
     align-self: center;
     width: 90%;
     height: 35px;
 }
 
-.form.submit button {
+.login-form > .form-control.submit button {
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -159,7 +165,7 @@ body {
     background-color: #ffae00;
 }
 
-.form.submit button:hover {
+.login-form > .form-control.submit button:hover {
     background-color: #FFC516;
 }
 
