@@ -93,7 +93,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 5px;
     border-radius: 5px;
-    border: 1px, solid, rgb(161, 161, 161);
+    border: 1px solid rgb(161, 161, 161);
 }
 
 .login-form > .form-control.email input:hover {
@@ -125,13 +125,14 @@ body {
     justify-content: left;
 }
 
-.login-form > .form-control.forgotpassword a {
+.login-form > .form-control.forgotpassword span {
     text-decoration: none;
     color: #ffae00;
 }
 
-.login-form > .form-control.forgotpassword a:hover {
+.login-form > .form-control.forgotpassword span:hover {
     color: #FFC516;
+    cursor: pointer;
 }
 
 .login-form > .form-control.rememberme {
