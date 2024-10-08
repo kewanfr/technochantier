@@ -1,0 +1,63 @@
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    /* background-color: grey; */
+    /* position: fixed; */
+    /* top: 160px; */
+    margin-top: 180px;
+    width: 90vw;
+    display: inline-block;
+    /* margin: auto; */
+    /* justify-self: center; */
+    /* margin: auto; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* justify-self: center; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 2vh;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Kumbh Sans', Helvetica, Arial, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.bold {
+    font-weight: 600;
+}
+
+.right {
+    text-align: right;
+}
+
+.align-center {
+    vertical-align: middle;
+}
+
+
+p {
+    /* text-align: center; */
+    font-size: 18px;
+    font-family: 'Kumbh Sans', Helvetica, Arial, sans-serif;
+}
