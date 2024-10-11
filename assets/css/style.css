@@ -2,13 +2,16 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
 }
 
 .container {
     /* background-color: grey; */
     /* position: fixed; */
     /* top: 160px; */
-    margin-top: 180px;
     width: 90vw;
     display: inline-block;
     /* margin: auto; */
@@ -17,11 +20,16 @@ body {
     /* justify-content: center; */
     /* flex-direction: column; */
     /* justify-self: center; */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* gap: 20px; */
+    min-height: 70vh;
     justify-content: center;
+    margin: auto;
+    margin-top: 180px;
 }
+    
+
 
 h1 {
     margin-bottom: 2vh;
