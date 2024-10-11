@@ -5,6 +5,20 @@
     padding: 40px 0;
     width: 100%;
     box-sizing: border-box;
+    position: absolute;
+
+    /* bottom: 0; left: 0; right: 0; */
+    /* position:static;
+    bottom: 0; */
+    /* flex-shrink: 0; */
+    /* margin-top: 60vh; */
+    position: relative;
+    bottom: 0;
+}
+
+footer {
+
+    z-index: 500;
 }
 
 .footer-container {
