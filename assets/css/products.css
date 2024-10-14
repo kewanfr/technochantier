@@ -27,29 +27,6 @@
 }
 
 .card {
-    /* background-color: grey; */
-    /* display: inline-block; */
-    /* margin: auto; */
-    /* margin: auto; */
-    
-    /* flex-direction: column; */
-    /* justify-self: center; */
-
-
-
-
-    /* margin: 1vh;
-    padding: 1vh;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 290px;
-    
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; */
-
-
     flex: 1 1 calc(25% - 20px);
     display: flex;
     flex-direction: column;
@@ -82,11 +59,9 @@
 }
 
 .card .card-header {
-    /* margin: auto; */
     margin-right: 20px;
     margin-left: 20px;
     height: 15vh;
-    /* border-bottom: 1px solid black; */
 }
 
 .card > .content {
@@ -99,7 +74,6 @@
 .card > .content > h3 {
     text-wrap: nowrap;
     margin-bottom: 8px;
-    /* font-size: 1.1rem; */
 }
 
 .buy.btn {

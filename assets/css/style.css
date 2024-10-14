@@ -9,24 +9,13 @@ body {
 }
 
 .container {
-    /* background-color: grey; */
-    /* position: fixed; */
-    /* top: 160px; */
     width: 90vw;
     display: inline-block;
-    /* margin: auto; */
-    /* justify-self: center; */
-    /* margin: auto; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
-    /* justify-self: center; */
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* gap: 20px; */
     min-height: 70vh;
     justify-content: center;
     margin: auto;
     margin-top: 180px;
+    margin-bottom: 6vh;
 }
     
 
@@ -65,7 +54,6 @@ html {
 
 
 p {
-    /* text-align: center; */
     font-size: 18px;
     font-family: 'Kumbh Sans', Helvetica, Arial, sans-serif;
 }

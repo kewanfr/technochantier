@@ -23,6 +23,10 @@ body {
     background-color: white;
     border-radius: 10px;
     min-width: 300px;
+
+    position: fixed;
+    top: 190px;
+    height: 60%;
 }
 
 .login-logo {

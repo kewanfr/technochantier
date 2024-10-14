@@ -9,9 +9,6 @@ html {
 
 #cart {
     width: 100%;
-
-    /* display: grid; */
-    /* grid-template-columns: 2fr 1; */
 }
 
 .cart-container {
@@ -39,8 +36,6 @@ html {
     display: block;
     margin-bottom: 20px;
     padding-bottom: .25rem;
-    /* padding-bottom: 1vh; */
-    /* margin-bottom: 4vh; */
 }
 
 .cart-container th {
@@ -78,8 +73,6 @@ table {
     margin-top: 1.2vh;
     padding-top: 6px;
     border-top: 1px solid #e7e7e7;
-
-    /* border-top: 2px solid grey; */
 }
 
 .subtotal-price {
@@ -94,21 +87,7 @@ table {
     border-color: #e7e7e7;
     border-top: 1px solid #e7e7e7;
 }
-/* 
-.buy.btn {
-    background-color: #FFC516;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;  
-    font-size: 1.3rem; 
-}
 
-.buy.btn:hover {
-    color: black;
-} */
 button.buy  {
     width: 100%;
     height: 100%;
@@ -125,19 +104,10 @@ button.buy:hover {
     background-color: #FFC516;
 }
 
-.item-element {
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-
-    /* border-top: 1px solid #e7e7e7; */
-}
 
 .product-info {
     display: flex;
     align-items: center;
-
-    /* justify-content: center; */
 
 }
 .product-info img {
