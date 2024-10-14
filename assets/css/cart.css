@@ -124,3 +124,7 @@ button.buy:hover {
 .headerbar {
     height: 130px;
 }
+
+.small-btn {
+    max-width: 45%;
+}
